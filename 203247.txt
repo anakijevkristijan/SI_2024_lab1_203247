@@ -1,0 +1,43 @@
+1.???
+2. kliknav na linkot i go promeniv imeto vo master prethodno bese main
+3.kliknav na kopceto new, mi se otvori nov prozorec za kreiranje nov repozitorium tamu go napisav imeto SI_2024_lab1_INDEX i go staviv da bide private i potoa kliknav create repository
+4. mkdir SI_2024_lab1_INDEX
+   cd SI_2024_lab1_INDEX
+   git init
+5.git remote add origin https://github.com/anakijevkristijan/SI_2024_lab1_203247.git
+6.echo "Kristijan Anakijev, 203247" >> README.md
+  git init
+  git add README.md
+  git commit -m "Initial commit"
+  git branch -M master
+  git push -u origin master
+7/8.gi simnav file-ovite gi zacuvav vo file-ot SI_2024_lab1_203247
+  git add .
+  git commit -m "Add starter code"
+  git push -u origin master
+9.git checkout -b bug1
+11.ja popraviv greskata,
+   git commit -a -m "Fix wrong condition in filterOddLengthStrings"
+12.git checkout -b bug2
+13.ja popraviv greskata,
+   git commit -a -m "Fix wrong condition in makeBigStringFrom"
+14.git checkout bug1
+15.go dodaov kodot,
+   git commit -a -m "Call method filterOddLengthStrings in main class."
+16.git checkout bug2
+17.go dodaov kodot,
+   git commit -a -m "Call method makeBigStringFrom in main class."
+18.git push --all
+19.git checkout master
+20.git merge bug1
+21.git push --all origin
+22.git checkout bug2
+23.git rebase master
+24.git add SILab1Main.java
+   git rebase --continue
+25.git checkout master
+   git merge bug2
+   mi javi konflikt go editnav
+   git push origin master
+26/27.git push --all origin
+28.
